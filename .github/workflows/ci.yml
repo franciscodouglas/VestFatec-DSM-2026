@@ -23,3 +23,7 @@ jobs:
 
       - name: Executar testes
         run: mvn -B test  
+
+      - name: Empacotação da Aplicação
+        run: mvn -B -DskipTests clean package
+

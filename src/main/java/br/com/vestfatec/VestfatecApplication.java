@@ -10,5 +10,6 @@ public class VestfatecApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(VestfatecApplication.class, args);
+       teste
     }
 }

@@ -1,0 +1,25 @@
+name: CI 
+
+on:
+  push:
+
+jobs:
+  build-vestFatec:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar Codigo
+        uses: actions/checkout@v4
+
+      - name: Instalando o JDK
+        uses: actions/setup-java@v4
+        with: 
+          distribution: temurin
+          java-version: 21
+          cache: maven
+          
+      - name: Compilar Aplicação
+        run: mvn -B -DskipTests clean compile
+
+      - name: Executar testes
+        run: mvn -B test  

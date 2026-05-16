@@ -1,2 +1,3 @@
-# VestFatec-DSM-2026
+# VestFatec
 
+VestFatec é um projeto estudantil 
